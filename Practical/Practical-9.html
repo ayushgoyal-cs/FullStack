@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+        <title>Practical-9</title>
+        <style>
+            *{
+                border: solid;
+                
+            }
+            #header{
+                width:100%;
+                background-color: darkgray;
+                color: white;
+                height: 50px;
+                position: fixed;
+                top:0;
+            }
+            .menu ul{  
+                list-style: none;
+                float: right;
+                margin: 0;
+            }
+            
+            .menu li{
+                display:inline-block;
+                line-height: 50px;
+                margin-right: 20px;
+                font-size: 25px;
+            }
+            .menu li a{
+                text-decoration: none;
+            }
+            .menu li a:hover{
+                color: black;
+                background-color: white;
+            }
+            #banner{
+                width: 100%;
+                height: 700px;
+                font-size: 40px;
+                margin-top: 50px;
+                margin-bottom: 40px;
+                color: white;
+                background-image: url("../images/practical-8a.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+            h1{
+                text-align: center;
+            }
+            #section1{
+                width: 100%;
+                margin: 10px;
+                margin-bottom: 20px;
+            }
+            .circle img{
+                width: 23%;
+                float: left;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            #section2{
+                width: 100%;
+                margin: 10px;
+                clear: both;
+                margin-bottom: 20px;
+            }
+            #aboutproject{
+                width:48%;
+                height: 400px;
+                color: white;
+                float: left;
+                margin-right: 20px;
+                background-color: darkgray;
+            }
+            .project img{
+                width:48%;
+                height:130px;
+                color: white;
+            }
+            #section3{
+                text-align: justify;
+                padding: 2px;
+                clear: both;
+                margin-bottom: 20px;
+            }
+            #section3 img{
+                width: 100%;
+                height: 150px;
+                border-radius: 10px;
+            }
+            .column{
+                width: 18%;
+                background-color:darkgray;
+                float: left;
+                margin: 20px;
+                padding: 18px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            #section3 a{
+            display: block;
+            text-align: center;
+            background-color: red;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            }
+            #section3 a:hover{
+            background-color:blue ;
+            }
+            #section4{
+                width: 100%;
+                clear: both;
+            }
+            #footer{
+                background-color: darkorchid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @media (min-width: 800px) and (max-width: 1200px){
+                #header{
+                width:100%;
+                background-color: darkgray;
+                color: white;
+                height: 50px;
+                position: fixed;
+                top:0;
+            }
+            .menu ul{  
+                list-style: none;
+                float: right;
+                margin: 0;
+            }
+            
+            .menu li{
+                display:inline-block;
+                line-height: 50px;
+                margin-right: 20px;
+                font-size: 25px;
+            }
+            .menu li a{
+                text-decoration: none;
+            }
+            .menu li a:hover{
+                color: black;
+                background-color: white;
+            }
+            }
+
+        </style>
+    </head>
+    <body>
+        <a name="top"></a>
+        <div id="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#section-2">ABOUT US</a></li>
+                    <li><a href="#section-1">TEAM</a></li>
+                    <li><a href="#section-3">TECHNOLOGIES</a></li>
+                    <li><a href="#section-4">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="banner">
+            <h2>Practical-9</h2></div>
+        </div>
+        <a name="section-1"></a>
+        <div id="section1"><h1>Team Members</h1>
+            <div class="circle"><img src="../images/practical-8c.png" alt="members"></div>
+            <div class="circle"><img src="../images/practical-8b.png" alt="members"></div>
+            <div class="circle"><img src="../images/practical-8e.png" alt="members"></div>
+            <div class="circle"><img src="../images/practical-8d.png" alt="members"></div>
+        </div>
+        <a name="section-2"></a>
+        <div id="section2"><h1>About Us</h1>
+            <div id="aboutproject">
+                <h3>About Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum quisquam quasi et consequatur ad. Dignissimos officia sunt, eos eius praesentium ullam sint, cumque suscipit obcaecati, veniam illo impedit vel nisi ipsum fuga aspernatur quibusdam maxime id adipisci ex totam repellendus magni? Ut, repudiandae placeat. Quo odio, maiores praesentium cumque commodi dolorum veniam pariatur illo a eaque aut consequatur iure nemo itaque impedit molestiae excepturi magni tenetur repellat voluptatibus repudiandae ab. Eaque ipsam ratione odio ut libero facere molestias aliquid, quia facilis beatae, sequi sed cum inventore ipsa, maiores repellat! Vero asperiores maiores nostrum molestiae sequi optio laudantium, blanditiis aspernatur nulla beatae molestias. Pariatur ea possimus est commodi quae doloribus. Aliquam nemo quisquam sunt animi iste hic doloremque, itaque sint! Rerum quisquam veritatis autem accusantium laborum. Quae obcaecati distinctio atque delectus eaque eligendi impedit sapiente veritatis ma</p>
+            </div>
+            <div class="project"><img src="../images/practical-8f.jpg" alt="Project-1"></div>
+            <div class="project"><img src="../images/practical-8g.jpg" alt="Project-2"></div>
+            <div class="project"><img src="../images/practical-8h.jpg" alt="Project-3"></div>
+        </div>
+        <a name="section-3"></a>
+        <div id="section3"><h1>Technologies Used</h1>
+            <div class="column">
+                <img src="../images/html.jpg" alt="HTML">
+                <h3>Introduction to HTML</h3>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+                    Hypertext refers to the way in which.....</p>
+                <a href="../HTML.html">Read More</a>
+            </div>
+            <div class="column">
+                <img src="../images/css.jpg" alt="CSS">
+                <h3>Introduction to CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document
+                    written in a markup language like HTML.</p>
+                <a href="../CSS.html">Read More</a>
+            </div>
+            <div class="column">
+                <img src="../images/javascript.jpg" alt="JAVASCRIPT">
+                <h3>Introduction to JavaScript</h3>
+                <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
+                    JavaScript is high-level, often.....</p>
+                <a href="../JS.html">Read More</a>
+            </div>
+            <div class="column">
+                <img src="../images/bootstrap.jpg" alt="BOOTSTRAP">
+                <h3>Introduction to Bootstrap</h3>
+                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+                    It contains CSS- and.....</p>
+                <a href="../BOOTSTRAP.html">Read More</a>
+            </div>
+        </div>
+        <a name="section-4"></a>
+        <div id="section4"><h1>Contact</h1>
+            <div id="footer">
+                <p>Website Template for Practical-8</p>
+            </br>
+                <a href="#top">Back to top</a>
+            </div>
+        </div>    
+    </body>
+</html>
