@@ -25,6 +25,7 @@
     width: 100%;
     float: right;
     margin-top: 70px;
+    transition: 0.3s;
 }
 #banner img{
     width: 100%;
@@ -43,25 +44,29 @@
     top:70px;
     position: fixed;
     left: -100%;
+    transition: 0.6s;
 }
 .side-bar ul{
     width: 100%;
 }
 .side-bar ul li{
     margin-bottom: 10px;
-    margin-left: 10px;
-    border-bottom: 2px solid lightgreen;
+    margin-left: 5px;
+    border-bottom: 2px solid whitesmoke;
+    list-style: none;
+    padding: 5px 20px;
 }
 .side-bar ul li a{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     opacity: 0.7;
 }
 .side-bar ul li a:hover{
-    border-left: 5px solid white;
-    transition: 0.3s;
+    border-left: 10px solid white;
+    transition: 0.5s;
     opacity: 1;
+    padding-left: 5px;
 }
 a i{
     margin-right: 10px;
@@ -100,7 +105,7 @@ input{
     position: absolute;
     bottom: 150px;
     color:white;
-    font-size:40px;
+    font-size:30px;
     display: flex;
     padding: 10px;
     justify-content: space-evenly;
@@ -108,3 +113,14 @@ input{
     border-bottom: 2px solid;
     border-top: 2px solid;
 }
+.social a{
+    opacity: 0.6;
+}
+.social a:hover{
+    opacity: 1;
+}
+i{
+    color: white;
+    font-size: 30px;
+}
+@media(max-)
