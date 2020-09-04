@@ -50,7 +50,7 @@
     width: 100%;
 }
 .side-bar ul li{
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     list-style: none;
 }
 .side-bar ul li a{
