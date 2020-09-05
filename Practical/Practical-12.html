@@ -10,24 +10,22 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
         body{
             background-color: lightgrey;
-            min-width: 100%;
         }
         #container{
-            width: 600px;
+            width: 98vw;
             margin: 20px auto;
             background-color: #fff;
-            margin: 20px auto;
-        }
+            padding:10px;
+            max-width: 700px;
+            }
         table{
             width: 100%;
-            margin:auto;
+            margin: 0 auto;
             border-collapse: collapse;
-        }
-        th,td{
-            text-align: center;
         }
         .basic{
             background-color:#c1dcb7;
@@ -42,7 +40,47 @@
             background-color:#d5e4bc;
         }
         td,th{
-
+            width: 150px;
+            padding:8px;
+            text-align: center;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+        }
+        th{
+            height: 85px;
+            font-size: 30px;
+            color: darkslateblue;
+        }
+        img{
+            height: 17px;
+            width: 17px;
+        }
+        tr:nth-child(2){
+            color: green;
+            font-size: 22px;
+        }
+        tr:nth-child(even){
+            background-color: #edf3e2;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            background-color:darkslateblue;
+            padding:15px 25px;
+            font-size: 20px;
+            border-radius: 8px;
+            line-height: 50px;
+        }
+        a:hover{
+            background-color:red;
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        i{
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -125,6 +163,20 @@
             <td><img src="../images/close.png" alt=""></td>
             <td><img src="../images/close.png" alt=""></td>
             <td><img src="../images/tick.png" alt=""></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#">Sign Up</a>
+            </td>
+            <td>
+                <a href="#">Sign Up</a>
+            </td>
+            <td>
+                <a href="#">Sign Up</a>
+            </td>
+            <td>
+                <a href="#">Sign Up</a>
+            </td>
         </tr>
        </table>
     </div>
