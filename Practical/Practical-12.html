@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Practical-12</title>
     <style>
         *{
@@ -18,23 +19,46 @@
             width: 600px;
             margin: 20px auto;
             background-color: #fff;
-            padding: 10px;
+            margin: 20px auto;
         }
         table{
             width: 100%;
             margin:auto;
+            border-collapse: collapse;
+        }
+        th,td{
+            text-align: center;
+        }
+        .basic{
+            background-color:#c1dcb7;
+        }
+        .plus{
+            background-color:#bad6c8;
+        }
+        .deluxe{
+            background-color:#bbd3dc;
+        }
+        .pro{
+            background-color:#d5e4bc;
+        }
+        td,th{
+
         }
     </style>
 </head>
 <body>
     <div id="container">
        <table>
+           <colgroup class="basic"></colgroup>
+           <colgroup class="plus"></colgroup>
+           <colgroup class="deluxe"></colgroup>
+           <colgroup class="pro"></colgroup>
            <h2>select your plan</h2>
            <tr>
-               <th>Basic</th>
-               <th>Plus</th>
-               <th>Deluxe</th>
-               <th>Pro</th>
+               <th><i class="fa fa-building"></i>Basic</th>
+               <th><i class="fa fa-superpowers"></i>Plus</th>
+               <th><i class="fa fa-telegram"></i>Deluxe</th>
+               <th><i class="fa fa-tachometer"></i>Pro</th>
            </tr>
            <tr>
                <td>Rs 500/-</td>
