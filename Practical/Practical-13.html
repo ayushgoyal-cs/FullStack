@@ -3,292 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Practical-13</title>
     <style>
-      *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.main-content{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: grey;
-}
-footer{
-    width: 100%;
-    background-color: #26272b;
-}
-.sec-1{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    padding: 30px 10px;
-}
-.about{
-    width: 40%;
-}
-.sec-1 h2{
-    font-size: 25px;
-    color: lightgray;
-    text-transform: uppercase;
-}
-.about p{
-    color: grey;
-    text-align: justify;
-    line-height: 25px;
-    margin-top: 10px;
-}
-.sec-1 ul{
-    list-style: none;
-}
-.sec-1 ul li{
-    padding: 5px;
-} 
-a{
-    text-decoration: none;
-    color: grey;
-}
-a:hover{
-    color: orange;
-}
-span{
-    color: grey;
-}
-i{
-    color: grey;
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.sec-2{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    align-items: center;
-}
-.sec-2 p{
-    color: gray;
-    font-size: 30px;
-    padding: 0;
-}
-.sec-2 a{
-    display: inline-block;
-    padding: 10px 25px;
-    color: white;
-    background-color: red;
-    margin-left: 10px;
-    border-radius: 20px;
-    font-size: 22px;
-}
-.sec-2 a:hover{
-    background-color: orange;
-}
-.sec-3{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.sec-3 ul{
-    list-style: none;
-    margin: 20px;
-}
-.sec-3 ul li{
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-    background-color: #424242;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-.sec-3 ul li i{
-    color: white;
-    font-size: 25px;
-    line-height: 20px;
-    text-align: center;
-}
-.sec-3 ul li:nth-child(1):hover{
-    background-color: #3b5999;
-}
-.sec-3 ul li:nth-child(2):hover{
-    background-color: #55acee;
-}
-.sec-3 ul li:nth-child(3):hover{
-    background-color: #dd4b39;
-}
-.sec-3 ul li:nth-child(4):hover{
-    background-color: #0077B5;
-}
-.sec-3 ul li:nth-child(5):hover{
-    background-color: #ea4c89;
-}
-.sec-4{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 30px
-}
-.sec-4 p{
-    color: grey;
-    position: relative;
-}
-.sec-4 p::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    background-color: yellow;
-    transition: all .3s;
-}
-.sec-4 p:hover::after{
-    width: 100%;
-}
-hr{
-    opacity: .2;
-}
-
-@media(max-width:800px){
-    .main-content{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .content {
         color: grey;
-    }
-    footer{
+        line-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: bolder;
+      }
+      footer {
         width: 100%;
         background-color: #26272b;
-    }
-    .sec-1{
+        min-width: 200px;
+      }
+      .sec-1 {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        padding: 30px 10px;
-    }
-    .about{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .sec-1 h2{
-        font-size: 25px;
-        color: lightgray;
+        justify-content: space-between;
+        padding: 15px;
+        padding-top: 25px;
+      }
+      .about {
+        width: 40%;
+      }
+      .sec-1 h3{
+        color: white;
         text-transform: uppercase;
-    }
-    .about p{
+        margin-bottom: 15px;
+      }
+      .about p {
         color: grey;
         text-align: justify;
+        margin-top: 15px;
         line-height: 25px;
-        margin-top: 10px;
-    }
-    .sec-1 ul{
+      }
+      .sec-1 ul {
         list-style: none;
-    }
-    .sec-1 ul li{
-        padding: 5px;
-    } 
-    a{
+      }
+      .sec-1 ul li {
+        padding: 6px;
+      }
+      a {
         text-decoration: none;
         color: grey;
-    }
-    a:hover{
-        color: orange;
-    }
-    span{
+      }
+      span {
         color: grey;
-    }
-    i{
+      }
+      i {
         color: grey;
         font-size: 20px;
         margin-right: 10px;
-    }
-    
-    .sec-2{
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        align-items: center;
-    }
-    .sec-2 p{
-        color: gray;
-        font-size: 30px;
-        padding: 0;
-    }
-    .sec-2 a{
-        display: inline-block;
-        padding: 10px 25px;
-        color: white;
-        background-color: red;
-        margin-left: 10px;
-        border-radius: 20px;
-        font-size: 22px;
-    }
-    .sec-2 a:hover{
-        background-color: orange;
-    }
-    .sec-3{
+      }
+
+      .sec-2 {
         display: flex;
         justify-content: center;
         padding: 20px;
-    }
-    .sec-3 ul{
-        list-style: none;
-        margin: 20px;
-    }
-    .sec-3 ul li{
+        align-items: center;
+      }
+      .sec-2 h2 {
+        color: gray;
+      }
+      .sec-2 a {
         display: inline-block;
-        width: 60px;
-        height: 60px;
+        color: white;
+        background-color: red;
+        margin-left: 15px;
+        border-radius: 20px;
+        font-size: 23px;
+        padding: 13px;
+      }
+      .sec-2 a:hover {
+        background-color: orange;
+      }
+      .sec-3 {
+        display: flex;
+        justify-content: center;
+      }
+      .sec-3 ul {
+        list-style: none;
+        margin: 25px;
+      }
+      .sec-3 ul li {
+        display: inline-block;
+        width: 65px;
+        height: 65px;
         padding: 20px;
         background-color: #424242;
         border-radius: 50%;
         margin-right: 20px;
-    }
-    .sec-3 ul li i{
+      }
+      .sec-3 ul li i {
         color: white;
         font-size: 25px;
-        line-height: 20px;
-        text-align: center;
-    }
-    .sec-3 ul li:nth-child(1):hover{
+      }
+      .sec-3 ul li:nth-child(1):hover {
         background-color: #3b5999;
-    }
-    .sec-3 ul li:nth-child(2):hover{
+      }
+      .sec-3 ul li:nth-child(2):hover {
         background-color: #55acee;
-    }
-    .sec-3 ul li:nth-child(3):hover{
+      }
+      .sec-3 ul li:nth-child(3):hover {
         background-color: #dd4b39;
-    }
-    .sec-3 ul li:nth-child(4):hover{
-        background-color: #0077B5;
-    }
-    .sec-3 ul li:nth-child(5):hover{
+      }
+      .sec-3 ul li:nth-child(4):hover {
+        background-color: #0077b5;
+      }
+      .sec-3 ul li:nth-child(5):hover {
         background-color: #ea4c89;
-    }
-    .sec-4{
+      }
+      .sec-4 {
         display: flex;
         justify-content: center;
         background-color: black;
-        padding: 30px
-    }
-    .sec-4 p{
+        padding: 20px;
+      }
+      .sec-4 p {
         color: grey;
         position: relative;
-    }
-    .sec-4 p::after{
-        content: '';
+      }
+      .sec-4 p::after {
+        content: "";
         display: block;
         width: 0;
         height: 2px;
@@ -296,239 +142,397 @@ hr{
         right: 0;
         bottom: -10px;
         background-color: yellow;
-        transition: all .3s;
-    }
-    .sec-4 p:hover::after{
+        transition: all 0.3s;
+      }
+      .sec-4 p:hover::after {
         width: 100%;
-    }
-    hr{
-        opacity: .2;
-    }
+      }
+      hr {
+        opacity: 0.2;
+      }
 
-}
+      @media (max-width: 800px) {
+        .content {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: grey;
+        }
+        footer {
+          width: 100%;
+          background-color: #26272b;
+        }
+        .sec-1 {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 30px 10px;
+        }
+        .about {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .sec-1 h3 {
+          color: lightgray;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        .about p {
+          color: grey;
+          text-align: justify;
+          line-height: 25px;
+          margin-top: 10px;
+        }
+        .sec-1 ul {
+          list-style: none;
+        }
+        .sec-1 ul li {
+          padding: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: grey;
+        }
+        a:hover {
+          color: orange;
+        }
+        span {
+          color: grey;
+        }
+        i {
+          color: grey;
+          font-size: 20px;
+          margin-right: 10px;
+        }
 
-@media(max-width: 500px){
-    .main-content{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: grey;
-    }
-    footer{
-        width: 100%;
-        background-color: #26272b;
-    }
-    .sec-1{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        padding: 30px 10px;
-    }
-    .about{
-        width: 100%;
-    }
-    .sec-1 h2{
-        font-size: 25px;
-        color: lightgray;
-        text-transform: uppercase;
-        margin-top: 20px;
-    }
-    .about p{
-        color: grey;
-        text-align: justify;
-        line-height: 25px;
-        margin-top: 10px;
-    }
-    .sec-1 ul{
-        list-style: none;
-    }
-    .sec-1 ul li{
-        padding: 5px;
-    } 
-    a{
-        text-decoration: none;
-        color: grey;
-    }
-    a:hover{
-        color: orange;
-    }
-    span{
-        color: grey;
-    }
-    i{
-        color: grey;
-        font-size: 20px;
-        margin-right: 10px;
-    }
-    
-    .sec-2{
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        align-items: center;
-    }
-    .sec-2 p{
-        color: gray;
-        font-size: 30px;
-        padding: 0;
-    }
-    .sec-2 a{
-        display: inline-block;
-        padding: 10px 25px;
-        color: white;
-        background-color: red;
-        margin-left: 10px;
-        border-radius: 20px;
-        font-size: 22px;
-    }
-    .sec-2 a:hover{
-        background-color: orange;
-    }
-    .sec-3{
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
-    .sec-3 ul{
-        list-style: none;
-        margin: 20px;
-    }
-    .sec-3 ul li{
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        padding: 20px;
-        background-color: #424242;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    .sec-3 ul li i{
-        color: white;
-        font-size: 25px;
-        line-height: 20px;
-        text-align: center;
-    }
-    .sec-3 ul li:nth-child(1):hover{
-        background-color: #3b5999;
-    }
-    .sec-3 ul li:nth-child(2):hover{
-        background-color: #55acee;
-    }
-    .sec-3 ul li:nth-child(3):hover{
-        background-color: #dd4b39;
-    }
-    .sec-3 ul li:nth-child(4):hover{
-        background-color: #0077B5;
-    }
-    .sec-3 ul li:nth-child(5):hover{
-        background-color: #ea4c89;
-    }
-    .sec-4{
-        display: flex;
-        justify-content: center;
-        background-color: black;
-        padding: 30px
-    }
-    .sec-4 p{
-        color: grey;
-        position: relative;
-    }
-    .sec-4 p::after{
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        position: absolute;
-        right: 0;
-        bottom: -10px;
-        background-color: yellow;
-        transition: all .3s;
-    }
-    .sec-4 p:hover::after{
-        width: 100%;
-    }
-    hr{
-        opacity: .2;
-    }
-}
+        .sec-2 {
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          align-items: center;
+        }
+        .sec-2 p {
+          color: gray;
+          font-size: 30px;
+          padding: 0;
+        }
+        .sec-2 a {
+          display: inline-block;
+          padding: 10px 25px;
+          color: white;
+          background-color: red;
+          margin-left: 10px;
+          border-radius: 20px;
+          font-size: 22px;
+        }
+        .sec-2 a:hover {
+          background-color: orange;
+        }
+        .sec-3 {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+        }
+        .sec-3 ul {
+          list-style: none;
+          margin: 20px;
+        }
+        .sec-3 ul li {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          padding: 20px;
+          background-color: #424242;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        .sec-3 ul li i {
+          color: white;
+          font-size: 25px;
+          line-height: 20px;
+          text-align: center;
+        }
+        .sec-3 ul li:nth-child(1):hover {
+          background-color: #3b5999;
+        }
+        .sec-3 ul li:nth-child(2):hover {
+          background-color: #55acee;
+        }
+        .sec-3 ul li:nth-child(3):hover {
+          background-color: #dd4b39;
+        }
+        .sec-3 ul li:nth-child(4):hover {
+          background-color: #0077b5;
+        }
+        .sec-3 ul li:nth-child(5):hover {
+          background-color: #ea4c89;
+        }
+        .sec-4 {
+          display: flex;
+          justify-content: center;
+          background-color: black;
+          padding: 30px;
+        }
+        .sec-4 p {
+          color: grey;
+          position: relative;
+        }
+        .sec-4 p::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          position: absolute;
+          right: 0;
+          bottom: -10px;
+          background-color: yellow;
+          transition: all 0.3s;
+        }
+        .sec-4 p:hover::after {
+          width: 100%;
+        }
+        hr {
+          opacity: 0.2;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .content {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: grey;
+        }
+        footer {
+          width: 100%;
+          background-color: #26272b;
+        }
+        .sec-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 30px 10px;
+        }
+        .about {
+          width: 100%;
+        }
+        .sec-1 h3 {
+          color: lightgray;
+          text-transform: uppercase;
+          margin-top: 20px;
+        }
+        .about p {
+          color: grey;
+          text-align: justify;
+          line-height: 25px;
+          margin-top: 10px;
+        }
+        .sec-1 ul {
+          list-style: none;
+        }
+        .sec-1 ul li {
+          padding: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: grey;
+        }
+        a:hover {
+          color: orange;
+        }
+        span {
+          color: grey;
+        }
+        i {
+          color: grey;
+          font-size: 20px;
+          margin-right: 10px;
+        }
+
+        .sec-2 {
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          align-items: center;
+        }
+        .sec-2 p {
+          color: gray;
+          font-size: 30px;
+          padding: 0;
+        }
+        .sec-2 a {
+          display: inline-block;
+          padding: 10px 25px;
+          color: white;
+          background-color: red;
+          margin-left: 10px;
+          border-radius: 20px;
+          font-size: 22px;
+        }
+        .sec-2 a:hover {
+          background-color: orange;
+        }
+        .sec-3 {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+        }
+        .sec-3 ul {
+          list-style: none;
+          margin: 20px;
+        }
+        .sec-3 ul li {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          padding: 20px;
+          background-color: #424242;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .sec-3 ul li i {
+          color: white;
+          font-size: 25px;
+          line-height: 20px;
+          text-align: center;
+        }
+        .sec-3 ul li:nth-child(1):hover {
+          background-color: #3b5999;
+        }
+        .sec-3 ul li:nth-child(2):hover {
+          background-color: #55acee;
+        }
+        .sec-3 ul li:nth-child(3):hover {
+          background-color: #dd4b39;
+        }
+        .sec-3 ul li:nth-child(4):hover {
+          background-color: #0077b5;
+        }
+        .sec-3 ul li:nth-child(5):hover {
+          background-color: #ea4c89;
+        }
+        .sec-4 {
+          display: flex;
+          justify-content: center;
+          background-color: black;
+          padding: 30px;
+        }
+        .sec-4 p {
+          color: grey;
+          position: relative;
+        }
+        .sec-4 p::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          position: absolute;
+          right: 0;
+          bottom: -10px;
+          background-color: yellow;
+          transition: all 0.3s;
+        }
+        .sec-4 p:hover::after {
+          width: 100%;
+        }
+        hr {
+          opacity: 0.2;
+        }
+      }
     </style>
   </head>
   <body>
-    <section class="main-content">
-      Responsive Footer
-  </section>
-  <footer>
+    <section class="content">Responsive Footer</section>
+    <footer>
       <section class="sec-1">
-          <section class="about">
-              <h2>
-                  About
-              </h2>
-              <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis suscipit laudantium placeat eveniet perspiciatis magni! Voluptatum, in atque excepturi illo esse quidem officia laboriosam modi quas aut maiores unde eaque. Esse maiores, perspiciatis, unde incidunt ratione odio repellat, nulla minus maxime natus quis rem nisi perferendis enim laudantium modi ab pariatur quo quae dolorum voluptas. Quia harum doloribus, nulla amet tempore doloremque vitae non, nostrum alias numquam reprehenderit accusamus quasi.
-              </p>
-          </section>
-          <section class="link1">
-              <h2>
-                  Categories
-              </h2>
-              <ul>
-                  <li><a href="#">C</a></li>
-                  <li><a href="#">Design</a></li>
-                  <li><a href="#">PHP</a></li>
-                  <li><a href="#">Java</a></li>
-                  <li><a href="#">Android</a></li>
-                  <li><a href="#">Hybrid Apps</a></li>
-              </ul>
-          </section>
-          <section class="link2">
-              <h2>
-                  Quick Links
-              </h2>
-              <ul>
-                  <li><a href="#">About US</a></li>
-                  <li><a href="#">Contact US</a></li>
-                  <li><a href="#">Contribute</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Sitemap</a></li>
-                  <li><a href="#">Disclaimer</a></li>
-              </ul>
-          </section>
-          <section class="link3">
-              <h2>
-                  Contact Us
-              </h2>
-              <ul>
-                  <li><i class="fa fa-home"></i><span>SCO-75, Chandigarh, India</span></li>
-                  <li><i class="fa fa-envelope"></i><span>fullstack@gmail.com</span></li>
-                  <li><i class="fa fa-phone-square"></i><span>Mobile:  9999999999</span></li>
-                  <li><i class="fa fa-facebook-official"></i><a href="#">FullStack</a></li>
-              </ul>
-          </section>
+        <section class="about">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+            suscipit laudantium placeat eveniet perspiciatis magni! Voluptatum,
+            in atque excepturi illo esse quidem officia laboriosam modi quas aut
+            maiores unde eaque. Esse maiores, perspiciatis, unde incidunt
+            ratione odio rlias numquam reprehenderit accusamus quasi.
+          </p>
+        </section>
+        <section class="category">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">C</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">Hybrid Apps</a></li>
+          </ul>
+        </section>
+        <section class="links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </section>
+        <section class="contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fa fa-home"></i><span>Mathura UP India</span>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i><span>ayushgoyal211@gmail.com</span>
+            </li>
+            <li>
+              <i class="fa fa-phone-square"></i><span>Mobile: 9876543210</span>
+            </li>
+            <li>
+              <i class="fa fa-facebook-official"></i><a href="#">Facebook</a>
+            </li>
+          </ul>
+        </section>
       </section>
       <hr width="100%" noshade />
       <section class="sec-2">
-          <p>Registration for Free</p>
-          <a href="#">Signup!</a>
+        <h2>Registration for Free</h2>
+        <a href="#">Signup!</a>
       </section>
-      <hr width="100%" noshade/>
+      <hr width="100%" noshade />
       <section class="sec-3">
-          <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+          </li>
+        </ul>
       </section>
       <section class="sec-4">
-          <p>
-              Copyright © 2020 All Rights Reserved by 
-              <a href="#">FullStack.</a>
-          </p>
+        <p>
+          Copyright © 2020 All Rights Reserved by
+          <a href="#">FullStack.</a>
+        </p>
       </section>
-  </footer>
+    </footer>
   </body>
 </html>
