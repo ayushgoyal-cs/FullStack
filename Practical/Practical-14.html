@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Practical-14</title>
     <style>
       * {
@@ -12,218 +15,276 @@
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
       }
-      body{
-        background-color: lightgray;
+      body {
+        background-color: rgb(245, 235, 235);
+        display: flex;
+        flex-direction: column;
+      }
+      header h1 {
+        color: red;
+        font-size: 7vw;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width: 350px;
+      }
+      form{
+        background-color: #fff;
+        padding: 30px;
       }
       .form1 {
-        background: linear-gradient(to left,red,orange);
-        margin: 100px;
+        background: linear-gradient(to left, red, orange);
+        width: 300px;
+        height: 360px;
+        margin: 25px;
       }
-      input[type='email'] {
-        width: 100%;
-        border: 0;
-        border-bottom: 1px solid;
-        padding-bottom: 10px;
-        padding-top: 25px;
-      }
-      input[type='password'] {
-        width: 100%;
-        border: 0;
-        border-bottom: 1px solid;
-        padding-bottom: 10px;
-        padding-top: 25px;
-      }
-      .form1 input[type='submit'] {
-        border: 0;
-        color: white;
-        font-size: 10px;
-        background-color:grey;
-        padding: 8px 16px;
-        border-radius: 30px;
-      }
-      form {
-        padding: 30px;
-        background-color: #fff;
-      }
-      .form1 h4{
+      .form1 h4 {
         padding-top: 10px;
         padding-bottom: 15px;
         color: #fff;
+        font-size: 20px;
         text-align: center;
       }
-      .form1 a{
-        text-decoration: none;
-        color: black;
-      }
-      .form1 i{
+      .form1 .social i {
         padding: 5px;
         padding-bottom: 20px;
         color: #fff;
       }
-      .form1 p{
+      input[type="email"] {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        outline: none;
+      }
+      input[type="password"] {
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+        padding-top: 30px;
+      }
+      .form1 p {
         font-size: 10px;
         color: gray;
         padding: 20px 0px;
         text-align: right;
       }
-      .form1 p#p2{
+      .form1 input[type="submit"] {
+        border: none;
+        color: white;
+        outline: none;
+        font-size: 10px;
+        background-color: rgb(85, 75, 75);
+        padding: 10px 25px;
+        border-radius: 30px;
+        outline: none;
+      }
+      .form1 p#p2 {
         display: inline-block;
-        margin-left: 140px;
         color: black;
+        margin-left: 6px;
       }
-      .form2 {
-        background-color: grey;
-        margin: 100px;
-      }
-      .form2 h4{
-        padding-bottom: 15px;
-        color: darkred;
-        text-align: center;
-      }
-      .form2 a{
+      .form1 a {
         text-decoration: none;
         color: black;
       }
-      .form2 i{
+      .form2 {
+        background-color: rgb(87, 119, 145);
+        width: 300px;
+        height: 360px;
+        margin:25px;
+      }
+      .form2 h4 {
+        padding-bottom: 15px;
+        color: darkred;
+        text-align: center;
+        font-size: 20px;
+      }
+      .form2 input[type="checkbox"] {
+        margin:25px 0px;
+      }
+      .form2 p {
+        font-size: 10px;
+        color: gray;
+        display: inline-block;
+      }
+      .form2 p b {
+        color: #3498db;
+      }
+      .form2 input[type="submit"] {
+        border: 0;
+        color: white;
+        font-size: 10px;
+        background-color: DARKRED;
+        padding: 10px 35px;
+        border-radius: 30px;
+        outline: none;
+      }
+      .form2 p#p3 {
+        display: inline-block;
+        color: black;
+        margin-left: 10px;
+      }
+      .form2 .social i {
         padding: 20px 5px;
         padding-bottom: 20px;
         color: #fff;
       }
-      .form2 p{
-        font-size: 10px;
-        color: gray;
-      }
-      .form2 p#p1{
-        display: inline;
-      }
-      .form2 p#p2{
-        display: inline-block;
-        margin-left: 120px;
-        color: black;
-      }
-      .form2 input[type='submit'] {
-        border: 0;
-        color: white;
-        font-size: 10px;
-        background-color:DARKRED;
-        padding: 10px 35px;
-        border-radius: 30px;
-      }
-      .social{
-        text-align: center;
-      }
-      .form2 input[type='checkbox']{
-        margin-top: 20px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-      }
-      .form2 p b{
-        color: #3498db;
-      }
-      .form3 {
-        background-color: white;
-        margin: 100px;
-      }
-      .form3 h4{
-        padding-bottom: 15px;
-        color: black;
-        text-align: center;
-      }
-      .form3 a{
+      .form2 a {
         text-decoration: none;
         color: black;
       }
-      .form3 i{
-        margin-top: 0px;
-        padding: 0px 30px;
-        padding-bottom: 20px;
+      .social {
+        text-align: center;
+      }
+      
+      .form3 {
+        background-color: white;
+        width: 300px;
+        height: 360px;
+        margin: 25px;
+      }
+      .form3 form{
+        padding-bottom: 15px;
+      }
+      .form3 h4 {
+        padding-bottom: 15px;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+      }
+      .form3 .social i {
+        padding-bottom: 10px;
+        padding-top: 10px;
         color: #3498db;
         width: 70px;
         border-radius: 20px;
         text-align: center;
-        padding-top: 20px;
         box-shadow: 2px 2px 5px #3498db;
+        margin-left: 10px;
       }
-      .form3 p{
+      .form3 p {
         font-size: 10px;
         color: gray;
+        text-align: right;
+        margin: 10px;
+        margin-bottom:35px;
       }
-      .form3 input[type='submit'] {
+      .form3 p#p4{
+        margin-bottom: 0px;
+      }
+      .form3 input[type="submit"] {
         border: 0;
         color: white;
         font-size: 10px;
-        background-color:DARKRED;
+        background-color: DARKRED;
         padding: 10px 35px;
         border-radius: 30px;
         width: 100%;
+        background: linear-gradient(to right,#3498db,#034670);
+        outline: none;
       }
-      .form3 p a{
+      .form3 a {
+        text-decoration: none;
+        color: black;
+      }
+      .form3 p a {
         color: #3498db;
       }
-      .form3 p{
-        font-size: 10px;
-        color: gray;
-        padding: 20px 0px;
-        text-align: right;
-      }
-      .form3 p:nth-child(6){
+      .form3 p:nth-child(6) {
         text-align: center;
         font-size: 14px;
       }
-      
-      .social{
+      .social {
         text-align: center;
+      }
+      .form3 input:focus{
+        border-bottom: 1.5px solid #3498db;
+      }
+      .form2 input:focus{
+        border-bottom: 1.5px solid darkred;
+      }
+      .form1 input:focus{
+        border-bottom: 1.5px solid orange;
       }
     </style>
   </head>
   <body>
+    <header><h1>FORM TEMPLATE</h1></header>
     <div class="main-container">
-    <div class="form1">
-      <h4>Log in</h4>
-      <div class="social">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
+      <div class="form1">
+        <h4>Log in</h4>
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <form>
+          <input type="email" placeholder="Your email" name="email" required />
+          <input
+            type="password"
+            placeholder="Your password"
+            name="pwd"
+            required
+          />
+          <p>
+            <a class="forgot" href="#">Forgot <b>password?</b></a>
+          </p>
+          <input type="submit" value="LOGIN" />
+          <p id="p2">Dont't have an account? <b>Sign Up</b></p>
+        </form>
       </div>
-      <form>
-        <input type="email" placeholder="Your email" name="email" required />
-        <input type="password" placeholder="Your password" name="pwd" required />
-        <p><a class="forgot" href="#">Forgot <b>password?</b></a></p>
-        <input type="submit" value="LOGIN"/>
-        <p id="p2">Dont't have an account? <b>Sign Up</b></p>
-      </form>
-    </div>
-    <div class="form2">
-      <form>
-        <h4>Sign up</h4>
-        <input type="email" placeholder="Your email" name="email" required >
-        <input type="password" placeholder="Your password" name="pwd" required >
-        <input type="checkbox" name="chk" id="chk">
-        <p id="p1">Accept the <b>Terms and Conditions</b></p><br>
-        <input type="submit" value="SIGN UP">
-        <p id="p2">Have an account? <b>Log in</b></p>
-      </form>
-      <div class="social">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
+      <div class="form2">
+        <form>
+          <h4>Sign up</h4>
+          <input type="email" placeholder="Your email" name="email" required />
+          <input
+            type="password"
+            placeholder="Your password"
+            name="pwd"
+            required
+          />
+          <input type="checkbox" name="chk" id="chk" />
+          <p id="p1">Accept the <b>Terms and Conditions</b></p>
+          <br />
+          <input type="submit" value="SIGN UP" />
+          <p id="p3">Have an account? <b>Log in</b></p>
+        </form>
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
       </div>
-    </div>
-    <div class="form3">
-      <form>
-        <h4>Sign in</h4>
-        <input type="email" placeholder="Your email" name="email" required >
-        <input type="password" placeholder="Your password" name="pwd" required >
-        <p><a class="forgot" href="#">Forgot password?</a></p>
-        <input type="submit" value="SIGN UP">
-        <p>or Sign in with</p>
-      </form>
-      <div class="social">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
+      <div class="form3">
+        <form>
+          <h4>Sign in</h4>
+          <input type="email" placeholder="Your email" name="email" required />
+          <input
+            type="password"
+            placeholder="Your password"
+            name="pwd"
+            required
+          />
+          <p><a class="forgot" href="#">Forgot password?</a></p>
+          <input type="submit" value="SIGN UP" />
+          <p id="p4">or Sign in with</p>
+        </form>
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
       </div>
-    </div>
     </div>
   </body>
 </html>
